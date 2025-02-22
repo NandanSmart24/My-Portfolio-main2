@@ -1,0 +1,168 @@
+.Projects{
+  /* min-height: 91vh; */
+  background-color: whitesmoke;
+  padding: 3.5rem 0 6rem 0;
+  margin-bottom: 3%;
+  /* padding: 3rem 0; */
+}
+.cards-body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project-cards{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 40vh;
+  gap: 100px 50px;
+  padding: 100px 50px;
+}
+.project-cards .card{
+  position: relative;
+  display: flex;  
+  justify-content: center;
+  align-items: flex-start;
+  width: 350px;
+  height: 250px;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  box-shadow: 0 5px 202px #ffcd00;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.project-cards .card:hover{
+  height: 400px;
+}
+.project-cards .card .imgBx{
+  position: absolute;
+  width: 300px;
+  height: 180px;
+  background-color: yellow;
+  top: 15px;
+  left: 23px;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.project-cards .card:hover .imgBx{
+  top: -100px;
+  scale: 0.75;
+
+}
+.project-cards .card .imgBx img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.project-cards .card .content{
+  position: absolute;
+  top: 200px;
+  height: 25px;
+  width: 100%;
+  overflow: hidden;
+  padding: 0 30px;
+  text-align: center;
+}
+.project-cards .card:hover .content{
+  top: 120px;
+  height: 300px;
+  transition-delay: 0.1s;
+}
+.project-name{
+  font-size: 15px;
+}
+.project-content{
+  font-size: 14px;
+}
+.project-cards .card .content .icon-item .d-flex .social-icon i {
+  width: 50px;
+  height: 50px;
+  background: #ffbf00;
+  border: 2px solid #ffbf00;
+  border-radius: 50%;
+  font-size: 25px;
+  color: black;
+  text-decoration: none;
+  margin: 0 10px 10px ;
+  transition: .5s ease;
+  opacity: 0.7;
+  animation: slideleft 1s ease forwards;
+  animation-delay: calc(.2s*var(--1));
+}
+
+.project-cards .card .content .icon-item .d-flex .social-icon i:hover {
+  background: #ffbf00;
+  opacity: 1;
+  color: whitesmoke;
+  box-shadow: 0 0 20px #ffbf00;
+}
+ .shape-1 {
+    position: absolute;
+    right: 10%;
+    animation: translatescale 6s linear infinite
+  }
+
+  @keyframes translatescale {
+    0% {
+      transform: translatey(0px)
+    }
+  
+    20% {
+      transform: translatey(50px)
+    }
+  
+    40% {
+      transform: scale(1.2)
+    }
+  
+    80% {
+      transform: rotate(80deg)
+    }
+  
+    100% {
+      transform: translatey(0px)
+    }
+  }
+
+ /* responive ===========================================================================================================	 */
+  @media (min-width: 1400px) and (max-width: 1599.98px) {
+
+ }
+  @media (min-width: 1200px) and (max-width: 1399.98px) {
+
+ }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+ 
+ }
+ @media (min-width: 768px) and (max-width: 991.98px) {
+  /* .Projects{
+    height: 150vh;
+  } */
+ }
+ @media (min-width: 576px) and (max-width: 767.98px) {
+
+ }
+ 
+ @media (min-width: 460px) and (max-width: 575.98px) {
+
+ }
+ @media (min-width: 0px) and (max-width: 459.98px) {
+  /* .cards-body{
+    height: 100vh;
+  } */
+  .Projects{
+    /* min-height: 60vh; */
+    margin-bottom: 10%;
+  }
+  .project-cards {
+    gap: 100px 50px;
+    padding: 50px 0px;
+ }
+ }
